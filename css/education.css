@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(36, 36, 36);
+    font-size: 16px;
+}
+.info {
+    position: relative;
+    width: 100%;
+}
+.info .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(240 248 255 / 15%);
+    border-radius: 5px;
+    position: relative;
+}
+.info .container::before,
+.info .container::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.info .container::before {
+    right: 10px;
+    top: 10px;
+}
+.info .container::after {
+    left: 10px;
+    top: 10px;
+}
+/*---start-finshed--*/
+.finshed {
+    position: relative;
+}
+.finshed .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.finshed .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240 248 255 / 15%);
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.finshed .box .title {
+    text-align: center;
+    color: aliceblue;
+}
+.finshed .box .title h1 {
+    font-size: 54px;
+}
+.finshed .box .title h3 {
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+.finshed .images img {
+    width: 213px;
+}
+@media (max-width: 768px) {
+    .finshed .images img {
+        width: 33px;
+    }
+    .finshed .box .title {
+        margin-left: 10px;
+    }
+    .finshed .box .title h1 {
+        font-size: 22px;
+    }
+    .finshed .box .title h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}
+/*---End-finshed--*/
+.edu {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.edu .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 40px;
+}
+.edu .box {
+    padding: 10px;
+    background-color: #8a2be266;
+    border-radius: 20px;
+    color: aliceblue;
+}
+.edu .box .title  {
+    text-align: center;
+}
+.edu .box .title h1{
+    font-size: 40px;
+    line-height: 44px;
+    position: relative;
+    margin-bottom: 13px;
+}
+.edu .box .title h1::before {
+    content: "";
+    background-color: blueviolet;
+    width: 0;
+    height: 4px;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    bottom: -10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: absolute;
+}
+.edu .box .title h1:hover::before {
+    width: 30px;
+    box-shadow: 0px 0px 8px 4px;
+}
+.edu .box .title p{
+    color: antiquewhite;
+    font-size: 15px;
+}
+.edu .box .title .sub{
+    color: antiquewhite;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.edu .box .title .sub:hover {
+    transform: scale(1.1);
+}
+.edu .box i{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 5px;
+    color: antiquewhite;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.empty {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.empty .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.empty .title  {
+    text-align: center;
+}
+.empty .title  h1{
+    font-size: 200px;
+    color: #00afe5;
+}

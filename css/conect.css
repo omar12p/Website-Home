@@ -1,0 +1,108 @@
+body {
+  background-color: rgb(37, 37, 37);
+}
+.wid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}  
+.wid .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wid .title {
+    width: 35%;
+    text-align: right;
+}
+@media (max-width: 767px) {
+  .wid .title {
+    width: 100%;
+  }
+  }
+.wid .title .coom  {
+    color: #aaaaaa;
+    margin: 30px 40px;
+    padding: 10px;
+    background-color: #484a4c7c;
+    border-radius: 20px;
+}
+.wid .title .coom h1 {
+  margin: 10px 0;
+}
+.wid .title .coom p {
+  margin: 10px 0;
+  font-size: 30px;
+}
+.wid .coom span {
+    display: block;
+    font-size: 30px;
+}
+.wid .inp{ 
+    width: 65%;
+}
+@media (max-width: 767px) {
+  .wid .inp{ 
+    width: 100%;
+}
+  }
+.wid .inp form {
+    margin: 50px 0;
+}
+.wid .inp  .teaxtr {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.281) none repeat scroll 0 0;
+    border: 1px dashed #7d04e0;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.4rem;
+    min-height: 50px;
+    text-transform: none;
+    background-clip: padding-box;
+    outline: none;
+    border-radius: 1.25rem !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 10px;
+    height: calc(2.25rem + 2px);
+}
+.wid .inp textarea {
+    height: 300px;
+    width: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.281) none repeat scroll 0 0;
+    border: 1px dashed #7d04e0;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.4rem;
+    padding: 10px;
+    color: white;
+    caret-color: rgb(144, 11, 221);
+    outline: none;
+    font-size: 20px;
+}
+.wid .inp button {
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    background-color: #7c21f3;
+    color: #ced4da;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 10px 0 rgb(0 0 0 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.wid .inp button:hover {
+  transform: scale(1.1);
+}
+.wid .inp  .teaxtr .headeree {
+    height: 300px;
+}
